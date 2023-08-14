@@ -1,0 +1,13 @@
+{
+    "name": "Nx Monorepo Dev Container",
+    "dockerFile": "Dockerfile",
+    "settings": {
+      "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+      "nrwl.vscode-nx"
+    ],
+    "forwardPorts": [4200],
+    "postCreateCommand": "npm install -g nx && npm install"
+  }
+  
