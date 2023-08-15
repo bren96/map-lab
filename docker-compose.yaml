@@ -1,4 +1,3 @@
-version: '3'
 services:
   nx-base:
     build:
@@ -10,8 +9,13 @@ services:
     build:
       context: .
       dockerfile: dockerfile
-    command: sleep infinity
-    working_dir: /app
     volumes:
       - .:/app
-  
+
+  ui-kit:
+    build:
+      context: .
+      dockerfile: libs/ui-kit/dockerfile
+    ports:
+      - "4400:4400"
+

@@ -1,0 +1,7 @@
+FROM map-lab-monorepo:latest
+
+WORKDIR /app
+
+EXPOSE 4400
+
+CMD ["nx", "run", "ui-kit:storybook"]
