@@ -1,4 +1,4 @@
-FROM map-lab-nx-base:latest
+FROM nx-base:1.0
 
 WORKDIR /app
 

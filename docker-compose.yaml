@@ -1,21 +1,28 @@
 services:
   nx-base:
+    image: nx-base:1.0
     build:
       context: libs/nx-base
       dockerfile: dockerfile
     command: sleep infinity
   
   monorepo:
+    image: monorepo:1.0
     build:
       context: .
       dockerfile: dockerfile
     volumes:
       - .:/app
+      - monorepo-node-modules:/app/node_modules
 
   ui-kit:
+    image: ui-kit:1.0
     build:
       context: .
       dockerfile: libs/ui-kit/dockerfile
     ports:
       - "4400:4400"
 
+
+volumes:
+  monorepo-node-modules:

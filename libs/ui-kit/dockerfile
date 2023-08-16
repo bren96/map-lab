@@ -1,4 +1,4 @@
-FROM map-lab-monorepo:latest
+FROM monorepo:1.0
 
 WORKDIR /app
 
