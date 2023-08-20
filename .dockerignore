@@ -1,1 +1,5 @@
-**/mode_modules
+**/node_modules
+**/.git
+.gitignore
+docker-compose.yaml
+dockerfile

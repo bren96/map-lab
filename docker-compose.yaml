@@ -1,11 +1,10 @@
-services:
-  nx-base:
-    image: nx-base:1.0
-    build:
-      context: libs/nx-base
-      dockerfile: dockerfile
-    command: sleep infinity
-  
+services:  
+  monorepo-base:
+    image: monorepo-base:1.0
+    build: 
+      context: .
+      dockerfile: base.dockerfile
+
   monorepo:
     image: monorepo:1.0
     build:
