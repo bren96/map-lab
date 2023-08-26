@@ -2,6 +2,9 @@ build-all:
 	docker compose build monorepo
 	docker compose build ui-kit
 
+setup-dev-monorepo:
+	docker compose up build-node-modules
+
 build-monorepo:
 	docker compose build monorepo
 
@@ -13,3 +16,8 @@ up-ui-kit:
 
 build-ui-kit:
 	docker compose build ui-kit
+
+cleanup-docker:
+	docker container prune -f
+	docker image prune -f
+	docker network prune -f

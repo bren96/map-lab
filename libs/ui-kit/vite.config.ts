@@ -18,12 +18,6 @@ export default defineConfig({
     nxViteTsPaths(),
   ],
 
-  server: {
-    watch: {
-      usePolling: true
-    }
-  },
-
   // Uncomment this if you are using workers.
   // worker: {
   //  plugins: [ nxViteTsPaths() ],
