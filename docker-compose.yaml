@@ -1,10 +1,4 @@
 services:  
-  monorepo-base:
-    image: monorepo-base:1.0
-    build: 
-      context: .
-      dockerfile: base.dockerfile
-
   monorepo:
     image: monorepo:1.0
     build:
@@ -21,6 +15,10 @@ services:
       dockerfile: libs/ui-kit/dockerfile
     ports:
       - "4400:4400"
+    volumes:
+      - .:/app
+      - monorepo-node-modules:/app/node_modules
+
 
 
 volumes:
