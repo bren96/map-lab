@@ -3,5 +3,6 @@ RUN npm i -g nx@16.6.0
 
 FROM base
 WORKDIR /app
-COPY . .
+COPY package.json .
+COPY package-lock.json .
 RUN npm i

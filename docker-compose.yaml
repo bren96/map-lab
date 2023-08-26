@@ -1,25 +1,20 @@
 services:  
   monorepo:
+    restart: always
     image: monorepo:1.0
     build:
       context: .
       dockerfile: dockerfile
     volumes:
-      - .:/app
-      - monorepo-node-modules:/app/node_modules
+      - ./:/app
+      - monorepo_node_modules:/app/node_modules
 
   ui-kit:
+    extends: monorepo
     image: ui-kit:1.0
-    build:
-      context: .
-      dockerfile: libs/ui-kit/dockerfile
+    command: nx storybook ui-kit
     ports:
       - "4400:4400"
-    volumes:
-      - .:/app
-      - monorepo-node-modules:/app/node_modules
-
-
 
 volumes:
-  monorepo-node-modules:
+  monorepo_node_modules:
