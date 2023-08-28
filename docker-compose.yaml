@@ -1,6 +1,5 @@
 services:
   monorepo:
-    restart: always
     image: monorepo:1.0
     build:
       context: .
@@ -8,12 +7,6 @@ services:
     volumes:
       - ./:/app
       - monorepo_node_modules:/app/node_modules
-
-  build-node-modules:
-    extends: monorepo
-    command: npm i
-    volumes:
-      - ./node_modules:/app/node_modules
 
   ui-kit:
     extends: monorepo

@@ -15,7 +15,6 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@map-lab/maplibre-plugin": ["libs/maplibre-plugin/src/index.ts"],
       "@map-lab/ui-kit": ["libs/ui-kit/src/index.ts"]
     }
   },
