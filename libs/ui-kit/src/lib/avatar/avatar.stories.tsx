@@ -1,20 +1,20 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { UiKit } from './ui-kit';
+import { Avatar } from './avatar';
 
 import { within } from '@storybook/testing-library';
 import { expect } from '@storybook/jest';
 
-const meta: Meta<typeof UiKit> = {
-  component: UiKit,
-  title: 'UiKit',
+const meta: Meta<typeof Avatar> = {
+  component: Avatar,
+  title: 'Avatar',
 };
 export default meta;
-type Story = StoryObj<typeof UiKit>;
+type Story = StoryObj<typeof Avatar>;
 
 export const Primary: Story = {
   args: {},
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
-    expect(canvas.getByText(/Welcome to UiKit!/gi)).toBeTruthy();
+    expect(canvas.getByText(/Welcome to Avatar!/gi)).toBeTruthy();
   },
 };
