@@ -11,10 +11,24 @@ const meta: Meta<typeof Avatar> = {
 export default meta;
 type Story = StoryObj<typeof Avatar>;
 
-export const Primary: Story = {
-  args: {},
+export const Default: Story = {
+  args: {
+    name: "Brendan Cullen",
+  },
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
-    expect(canvas.getByText(/Welcome to Avatar!/gi)).toBeTruthy();
+    expect(canvas.getByText("BC")).toBeTruthy();
+  },
+};
+
+export const Tooltip: Story = {
+  args: {
+    name: "Brendan Cullen",
+    tooltip: true,
+  },
+  // TO-DO: add tests for tooltip
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    expect(canvas.getByText("BC")).toBeTruthy();
   },
 };

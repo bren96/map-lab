@@ -4,10 +4,7 @@ import { Tooltip } from "../tooltip";
 import styles from "./avatar.module.scss";
 import { clsx } from "clsx";
 
-
-const DEFAULT_SIZE = 24;
-const DEFAULT_NAME = '...';
-const DEFAULT_COLOR = '#000';
+const DEFAULT_SIZE = 28;
 const FONT_SIZE_FACTOR = 0.36;
 
 export interface Props extends Omit<ComponentProps<"div">, "color"> {
@@ -29,9 +26,10 @@ interface EllipsisProps extends ComponentProps<"div"> {
 }
 
 export function Avatar({
+  src,
+  name,
+  color,
   size = DEFAULT_SIZE,
-  name = DEFAULT_NAME,
-  color = DEFAULT_COLOR,
   outline = false,
   tooltip = false,
   tooltipProps,
@@ -50,6 +48,10 @@ export function Avatar({
       aria-label={name}
       {...props}
     >
+      {src && (
+        <img alt={name} src={src} height={size} width={size} aria-hidden >
+        </img>
+      )}
       <span
         style={{ fontSize: size * FONT_SIZE_FACTOR }}
         className={styles.label}

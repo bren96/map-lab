@@ -28,26 +28,28 @@ export const Tooltip = forwardRef<HTMLDivElement, Props>(
     ref
   ) => {
     return (
-      <RadixTooltip.Root
-        defaultOpen={defaultOpen}
-        delayDuration={delayDuration}
-        disableHoverableContent={disableHoverableContent}
-        onOpenChange={onOpenChange}
-        open={open}
-      >
-        <RadixTooltip.Trigger asChild>{children}</RadixTooltip.Trigger>
-        <RadixTooltip.Portal>
-          <RadixTooltip.Content
-            className={clsx(className, styles.tooltip)}
-            ref={ref}
-            collisionPadding={collisionPadding}
-            sideOffset={sideOffset}
-            {...props}
-          >
-            {content}
-          </RadixTooltip.Content>
-        </RadixTooltip.Portal>
-      </RadixTooltip.Root>
+      <RadixTooltip.Provider>
+        <RadixTooltip.Root
+          defaultOpen={defaultOpen}
+          delayDuration={delayDuration}
+          disableHoverableContent={disableHoverableContent}
+          onOpenChange={onOpenChange}
+          open={open}
+        >
+          <RadixTooltip.Trigger asChild>{children}</RadixTooltip.Trigger>
+          <RadixTooltip.Portal>
+            <RadixTooltip.Content
+              className={clsx(className, styles.tooltip)}
+              ref={ref}
+              collisionPadding={collisionPadding}
+              sideOffset={sideOffset}
+              {...props}
+            >
+              {content}
+            </RadixTooltip.Content>
+          </RadixTooltip.Portal>
+        </RadixTooltip.Root>
+      </RadixTooltip.Provider>
     );
   }
 );
