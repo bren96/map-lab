@@ -29,7 +29,6 @@ interface EllipsisProps extends ComponentProps<"div"> {
 }
 
 export function Avatar({
-  src,
   size = DEFAULT_SIZE,
   name = DEFAULT_NAME,
   color = DEFAULT_COLOR,
@@ -51,9 +50,6 @@ export function Avatar({
       aria-label={name}
       {...props}
     >
-      {src && (
-        <Image alt={name} src={src} height={size} width={size} aria-hidden />
-      )}
       <span
         style={{ fontSize: size * FONT_SIZE_FACTOR }}
         className={styles.label}

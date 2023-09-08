@@ -1,7 +1,0 @@
-FROM monorepo:1.0
-
-WORKDIR /app
-
-EXPOSE 4400
-
-CMD [ "nx run ui-kit:storybook" ]

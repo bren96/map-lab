@@ -1,12 +1,13 @@
 import * as RadixTooltip from "@radix-ui/react-tooltip";
 import clsx from "clsx";
-import { ReactNode, forwardRef } from "react";
+import { forwardRef } from "react";
 import styles from "./Tooltip.module.css";
 
 export interface Props
   extends RadixTooltip.TooltipProps,
     RadixTooltip.TooltipContentProps {
-  content: ReactNode;
+  // TO-DO: Type this properly (was originally ReactNode from react)
+  content: any;
 }
 
 export const Tooltip = forwardRef<HTMLDivElement, Props>(
