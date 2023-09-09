@@ -1,7 +1,7 @@
-import * as RadixTooltip from "@radix-ui/react-tooltip";
-import clsx from "clsx";
-import { forwardRef } from "react";
-import styles from "./Tooltip.module.css";
+import * as RadixTooltip from '@radix-ui/react-tooltip';
+import clsx from 'clsx';
+import { forwardRef } from 'react';
+import styles from './Tooltip.module.css';
 
 export interface Props
   extends RadixTooltip.TooltipProps,

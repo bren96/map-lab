@@ -22,7 +22,6 @@ Run `nx test-storybook ui-kit` to execute the integrations tests via Storybook.
 
 Run `nx e2e ui-kit` to exectute the e2e tests via Cypress.
 
-
 ## Generate Component
 
 Run `nx g @nx/react:component new-component-name --project=ui-kit --style=scss` to generate a component via the Nx/React component generator.

@@ -1,28 +1,28 @@
-import { ComponentProps } from "react";
-import { getInitials } from "../utils/getInitials";
-import { Tooltip } from "../tooltip";
-import styles from "./avatar.module.scss";
-import { clsx } from "clsx";
+import { ComponentProps } from 'react';
+import { getInitials } from '../utils/getInitials';
+import { Tooltip } from '../tooltip';
+import styles from './avatar.module.scss';
+import { clsx } from 'clsx';
 
 const DEFAULT_SIZE = 28;
 const FONT_SIZE_FACTOR = 0.36;
 
-export interface Props extends Omit<ComponentProps<"div">, "color"> {
+export interface Props extends Omit<ComponentProps<'div'>, 'color'> {
   src?: string;
   name: string;
   size?: number;
   color?: string;
   outline?: boolean;
   tooltip?: boolean;
-  tooltipProps?: Omit<ComponentProps<typeof Tooltip>, "children" | "content">;
+  tooltipProps?: Omit<ComponentProps<typeof Tooltip>, 'children' | 'content'>;
 }
 
-interface EllipsisProps extends ComponentProps<"div"> {
+interface EllipsisProps extends ComponentProps<'div'> {
   ellipsis: number;
   size?: number;
   outline?: boolean;
   tooltip?: boolean;
-  tooltipProps?: Omit<ComponentProps<typeof Tooltip>, "children" | "content">;
+  tooltipProps?: Omit<ComponentProps<typeof Tooltip>, 'children' | 'content'>;
 }
 
 export function Avatar({
@@ -49,8 +49,7 @@ export function Avatar({
       {...props}
     >
       {src && (
-        <img alt={name} src={src} height={size} width={size} aria-hidden >
-        </img>
+        <img alt={name} src={src} height={size} width={size} aria-hidden></img>
       )}
       <span
         style={{ fontSize: size * FONT_SIZE_FACTOR }}
@@ -102,7 +101,7 @@ export function AvatarEllipsis({
 
   return tooltip ? (
     <Tooltip
-      content={`${ellipsis} other${ellipsis > 1 ? "s" : ""}`}
+      content={`${ellipsis} other${ellipsis > 1 ? 's' : ''}`}
       {...tooltipProps}
     >
       {content}
