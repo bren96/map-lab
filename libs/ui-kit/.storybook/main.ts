@@ -13,7 +13,6 @@ const config: StorybookConfig = {
   },
 };
 
-
 export default config;
 
 // To customize your Vite configuration you can use the viteFinal field.

@@ -68,9 +68,9 @@ select {
 }
 
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type='button'],
+[type='reset'],
+[type='submit'] {
   appearance: button;
   background-color: transparent;
   background-image: none;
@@ -93,7 +93,7 @@ progress {
   height: auto;
 }
 
-[type="search"] {
+[type='search'] {
   appearance: textfield;
 }
 
@@ -148,7 +148,7 @@ textarea {
 }
 
 button,
-[role="button"] {
+[role='button'] {
   cursor: pointer;
 }
 
