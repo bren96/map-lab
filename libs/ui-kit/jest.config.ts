@@ -1,4 +1,4 @@
-import type {Config} from "jest";
+import type { Config } from 'jest';
 
 const config: Config = {
   displayName: 'ui-kit',
@@ -9,6 +9,6 @@ const config: Config = {
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
   coverageDirectory: '../../coverage/libs/ui-kit',
-}
+};
 
 export default config;
