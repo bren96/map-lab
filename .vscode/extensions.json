@@ -4,6 +4,6 @@
     "esbenp.prettier-vscode",
     "firsttris.vscode-jest-runner",
     "dbaeumer.vscode-eslint",
-    "ms-vscode.live-server",
+    "ms-vscode.live-server"
   ]
 }
