@@ -77,10 +77,8 @@
   --opacity-disabled: 0.5;
 
   accent-color: var(--color-accent);
-}
 
-/* Light theme */
-:root {
+  /* Default to Light theme */
   --color-red: 239 67 67;
   --color-green: 132 204 22;
   --color-accent: rgb(var(--color-gray-900));
