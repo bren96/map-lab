@@ -3,6 +3,15 @@ cleanup-docker:
 	docker image prune -f
 	docker network prune -f
 
+format-check:
+	nx format:check
+
+lint-affected:
+	nx affected -t lint
+
+test-affected:
+	nx affected -t test
+
 # ui-kit commands
 
 start-ui-kit:
