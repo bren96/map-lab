@@ -10,7 +10,7 @@ const config: Config = {
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
   collectCoverage: true,
   coverageDirectory: '../../coverage/libs/ui-kit',
-  coverageReporters: ['lcov']
+  coverageReporters: ['lcov'],
 };
 
 export default config;
