@@ -8,7 +8,9 @@ const config: Config = {
     '^.+\\.[tj]sx?$': ['babel-jest', { presets: ['@nx/react/babel'] }],
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
+  collectCoverage: true,
   coverageDirectory: '../../coverage/libs/ui-kit',
+  coverageReporters: ['lcov']
 };
 
 export default config;
