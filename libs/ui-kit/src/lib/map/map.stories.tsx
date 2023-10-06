@@ -66,7 +66,7 @@ export const Default: Story = {
                 position: 'bottom-left',
                 label: 'Source',
                 type: 'text',
-                source: '$layer-1.data.source'
+                text: '$layer-1.data.source'
             },
         }
     }
