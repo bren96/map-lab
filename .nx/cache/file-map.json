@@ -1,0 +1,303 @@
+{
+  "version": "6.0",
+  "nxVersion": "16.6.0",
+  "deps": {
+    "@radix-ui/react-tooltip": "^1.0.6",
+    "@swc/helpers": "~0.5.0",
+    "next": "13.4.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "tslib": "^2.3.0",
+    "@babel/preset-react": "^7.14.5",
+    "@nx/cypress": "16.6.0",
+    "@nx/eslint-plugin": "16.6.0",
+    "@nx/jest": "16.6.0",
+    "@nx/js": "16.8.1",
+    "@nx/linter": "16.6.0",
+    "@nx/next": "16.8.1",
+    "@nx/playwright": "16.8.1",
+    "@nx/react": "16.8.1",
+    "@nx/storybook": "^16.7.4",
+    "@nx/vite": "16.6.0",
+    "@nx/web": "16.7.4",
+    "@nx/workspace": "16.6.0",
+    "@playwright/test": "^1.36.0",
+    "@storybook/addon-essentials": "7.3.0",
+    "@storybook/addon-interactions": "^7.2.1",
+    "@storybook/core-server": "7.3.0",
+    "@storybook/jest": "~0.1.0",
+    "@storybook/nextjs": "^7.1.0",
+    "@storybook/react-vite": "7.3.0",
+    "@storybook/test-runner": "^0.13.0",
+    "@storybook/testing-library": "~0.2.0",
+    "@swc/cli": "~0.1.62",
+    "@swc/core": "~1.3.51",
+    "@testing-library/react": "14.0.0",
+    "@types/jest": "^29.4.0",
+    "@types/node": "18.14.2",
+    "@types/react": "18.2.14",
+    "@types/react-dom": "18.2.6",
+    "@typescript-eslint/eslint-plugin": "^5.60.1",
+    "@typescript-eslint/parser": "^5.60.1",
+    "@vitejs/plugin-react": "~4.0.0",
+    "@vitest/ui": "~0.32.0",
+    "babel-jest": "^29.4.1",
+    "clsx": "^2.0.0",
+    "cypress": "^12.16.0",
+    "eslint": "~8.15.0",
+    "eslint-config-next": "13.4.1",
+    "eslint-config-prettier": "8.1.0",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-jsx-a11y": "6.7.1",
+    "eslint-plugin-playwright": "^0.15.3",
+    "eslint-plugin-react": "7.32.2",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "jest": "^29.4.1",
+    "jest-environment-jsdom": "^29.4.1",
+    "jest-environment-node": "^29.4.1",
+    "jsdom": "~22.1.0",
+    "nx": "16.6.0",
+    "prettier": "^2.6.2",
+    "sass": "^1.66.1",
+    "ts-jest": "^29.1.0",
+    "ts-node": "10.9.1",
+    "typescript": "~5.1.3",
+    "vite": "~4.3.9",
+    "vite-plugin-dts": "~2.3.0",
+    "vitest": "~0.32.0"
+  },
+  "pathMappings": {
+    "@map-lab/ui-kit": [
+      "libs/ui-kit/src/index.ts"
+    ]
+  },
+  "nxJsonPlugins": [],
+  "projectFileMap": {
+    "ui-kit": [
+      {
+        "file": "libs/ui-kit/.babelrc",
+        "hash": "2946678488919325452"
+      },
+      {
+        "file": "libs/ui-kit/.eslintrc.json",
+        "hash": "11012487992710232822"
+      },
+      {
+        "file": "libs/ui-kit/.storybook/main.ts",
+        "hash": "12613121588955476004",
+        "deps": [
+          "npm:@storybook/react-vite"
+        ]
+      },
+      {
+        "file": "libs/ui-kit/.storybook/preview.ts",
+        "hash": "18155713023064010269",
+        "deps": [
+          "npm:@storybook/react"
+        ]
+      },
+      {
+        "file": "libs/ui-kit/README.md",
+        "hash": "10439342083833064217"
+      },
+      {
+        "file": "libs/ui-kit/jest.config.ts",
+        "hash": "3330951425334525824",
+        "deps": [
+          "npm:jest"
+        ]
+      },
+      {
+        "file": "libs/ui-kit/package.json",
+        "hash": "13141927838546425261"
+      },
+      {
+        "file": "libs/ui-kit/project.json",
+        "hash": "8136121684733643664"
+      },
+      {
+        "file": "libs/ui-kit/src/index.ts",
+        "hash": "7157302426423615755"
+      },
+      {
+        "file": "libs/ui-kit/src/lib/avatar/avatar.module.scss",
+        "hash": "16182748078956803922"
+      },
+      {
+        "file": "libs/ui-kit/src/lib/avatar/avatar.spec.tsx",
+        "hash": "11712956999415334788",
+        "deps": [
+          "npm:@testing-library/react"
+        ]
+      },
+      {
+        "file": "libs/ui-kit/src/lib/avatar/avatar.stories.tsx",
+        "hash": "14017079911912869749",
+        "deps": [
+          "npm:@storybook/react",
+          "npm:@storybook/testing-library",
+          "npm:@storybook/jest"
+        ]
+      },
+      {
+        "file": "libs/ui-kit/src/lib/avatar/avatar.tsx",
+        "hash": "12379455972684061157",
+        "deps": [
+          "npm:react",
+          "npm:clsx"
+        ]
+      },
+      {
+        "file": "libs/ui-kit/src/lib/avatar/index.ts",
+        "hash": "15222614686464524966"
+      },
+      {
+        "file": "libs/ui-kit/src/lib/global.scss",
+        "hash": "662316833294893901"
+      },
+      {
+        "file": "libs/ui-kit/src/lib/normalize.scss",
+        "hash": "320543528318122805"
+      },
+      {
+        "file": "libs/ui-kit/src/lib/tooltip/Tooltip.module.css",
+        "hash": "12858180799549737088"
+      },
+      {
+        "file": "libs/ui-kit/src/lib/tooltip/Tooltip.tsx",
+        "hash": "654802101444235927",
+        "deps": [
+          "npm:@radix-ui/react-tooltip",
+          "npm:clsx",
+          "npm:react"
+        ]
+      },
+      {
+        "file": "libs/ui-kit/src/lib/tooltip/index.ts",
+        "hash": "18160921599671382834"
+      },
+      {
+        "file": "libs/ui-kit/src/lib/utils/getInitials.ts",
+        "hash": "15955314812319659622"
+      },
+      {
+        "file": "libs/ui-kit/tsconfig.json",
+        "hash": "16360660509644610628"
+      },
+      {
+        "file": "libs/ui-kit/tsconfig.lib.json",
+        "hash": "11287771640852828788"
+      },
+      {
+        "file": "libs/ui-kit/tsconfig.spec.json",
+        "hash": "6514620907549802163"
+      },
+      {
+        "file": "libs/ui-kit/tsconfig.storybook.json",
+        "hash": "12725732059481497688"
+      },
+      {
+        "file": "libs/ui-kit/vite.config.ts",
+        "hash": "4727672771018360876",
+        "deps": [
+          "npm:vite",
+          "npm:@vitejs/plugin-react",
+          "npm:@nx/vite",
+          "npm:vite-plugin-dts",
+          "npm:path"
+        ]
+      }
+    ],
+    "map-lab-next-e2e": [
+      {
+        "file": "apps/map-lab-next-e2e/.eslintrc.json",
+        "hash": "632147010597293032"
+      },
+      {
+        "file": "apps/map-lab-next-e2e/playwright.config.ts",
+        "hash": "8737683005470321083",
+        "deps": [
+          "npm:@playwright/test",
+          "npm:@nx/playwright",
+          "npm:@nx/devkit"
+        ]
+      },
+      {
+        "file": "apps/map-lab-next-e2e/project.json",
+        "hash": "12604657883587061413"
+      },
+      {
+        "file": "apps/map-lab-next-e2e/src/example.spec.ts",
+        "hash": "16019101014373124625",
+        "deps": [
+          "npm:@playwright/test"
+        ]
+      }
+    ],
+    "map-lab-next": [
+      {
+        "file": "apps/map-lab-next/.eslintrc.json",
+        "hash": "9076838612676022404"
+      },
+      {
+        "file": "apps/map-lab-next/app/api/hello/route.ts",
+        "hash": "495073956729887886"
+      },
+      {
+        "file": "apps/map-lab-next/app/global.css",
+        "hash": "10943017421299445298"
+      },
+      {
+        "file": "apps/map-lab-next/app/layout.tsx",
+        "hash": "7097320863439736721"
+      },
+      {
+        "file": "apps/map-lab-next/app/page.module.scss",
+        "hash": "4786619528779355986"
+      },
+      {
+        "file": "apps/map-lab-next/app/page.tsx",
+        "hash": "9913376342745753301"
+      },
+      {
+        "file": "apps/map-lab-next/index.d.ts",
+        "hash": "5498222895072842432"
+      },
+      {
+        "file": "apps/map-lab-next/jest.config.ts",
+        "hash": "18178450327044718270"
+      },
+      {
+        "file": "apps/map-lab-next/next-env.d.ts",
+        "hash": "5909181270615354023"
+      },
+      {
+        "file": "apps/map-lab-next/next.config.js",
+        "hash": "17252635002163063865",
+        "deps": [
+          "npm:@nx/next"
+        ]
+      },
+      {
+        "file": "apps/map-lab-next/project.json",
+        "hash": "5250055419910653813"
+      },
+      {
+        "file": "apps/map-lab-next/public/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "apps/map-lab-next/public/favicon.ico",
+        "hash": "9303420814833116677"
+      },
+      {
+        "file": "apps/map-lab-next/tsconfig.json",
+        "hash": "15044290511855938377"
+      },
+      {
+        "file": "apps/map-lab-next/tsconfig.spec.json",
+        "hash": "6922413205408300107"
+      }
+    ]
+  }
+}

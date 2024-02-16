@@ -65,6 +65,12 @@
       "library": {
         "unitTestRunner": "jest"
       }
+    },
+    "@nx/next": {
+      "application": {
+        "style": "scss",
+        "linter": "eslint"
+      }
     }
   }
 }
