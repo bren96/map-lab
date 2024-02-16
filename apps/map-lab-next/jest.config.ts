@@ -1,5 +1,6 @@
-/* eslint-disable */
-export default {
+import type { Config } from 'jest';
+
+const config: Config = {
   displayName: 'map-lab-next',
   preset: '../../jest.preset.js',
   transform: {
@@ -7,5 +8,9 @@ export default {
     '^.+\\.[tj]sx?$': ['babel-jest', { presets: ['@nx/next/babel'] }],
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
+  collectCoverage: true,
   coverageDirectory: '../../coverage/apps/map-lab-next',
+  coverageReporters: ['lcov'],
 };
+
+export default config;
