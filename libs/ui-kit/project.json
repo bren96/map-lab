@@ -17,7 +17,8 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "outputPath": "dist/libs/ui-kit"
+        "outputPath": "dist/libs/ui-kit",
+        "postcssConfig": "libs/ui-kit/postcss.config.js"
       },
       "configurations": {
         "development": {

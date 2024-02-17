@@ -1,5 +1,7 @@
 import { Preview } from '@storybook/react';
 
+import '../src/lib/global.css';
+
 const preview: Preview = {
   parameters: {
     backgrounds: {
