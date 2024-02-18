@@ -17,14 +17,6 @@ export interface Props extends Omit<ComponentProps<'div'>, 'color'> {
   tooltipProps?: Omit<ComponentProps<typeof Tooltip>, 'children' | 'content'>;
 }
 
-interface EllipsisProps extends ComponentProps<'div'> {
-  ellipsis: number;
-  size?: number;
-  outline?: boolean;
-  tooltip?: boolean;
-  tooltipProps?: Omit<ComponentProps<typeof Tooltip>, 'children' | 'content'>;
-}
-
 export function Avatar({
   src,
   name,
@@ -63,47 +55,6 @@ export function Avatar({
 
   return tooltip ? (
     <Tooltip content={name} {...tooltipProps}>
-      {content}
-    </Tooltip>
-  ) : (
-    content
-  );
-}
-
-export function AvatarEllipsis({
-  ellipsis,
-  size = DEFAULT_SIZE,
-  outline = false,
-  tooltip = false,
-  tooltipProps,
-  className,
-  style,
-  ...props
-}: EllipsisProps) {
-  const content = (
-    <div
-      className={clsx(
-        styles.avatar,
-        className,
-        outline && styles.avatarOutline
-      )}
-      style={{ width: size, height: size, ...style }}
-      {...props}
-    >
-      <span
-        style={{ fontSize: size * FONT_SIZE_FACTOR }}
-        className={styles.label}
-      >
-        +{ellipsis}
-      </span>
-    </div>
-  );
-
-  return tooltip ? (
-    <Tooltip
-      content={`${ellipsis} other${ellipsis > 1 ? 's' : ''}`}
-      {...tooltipProps}
-    >
       {content}
     </Tooltip>
   ) : (
