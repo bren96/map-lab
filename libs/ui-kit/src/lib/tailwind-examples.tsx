@@ -1,4 +1,4 @@
-export function TailwindExamples() {
+export default function TailwindExamples() {
   return (
     <>
       <p className="text-1xl">text-1xl</p>

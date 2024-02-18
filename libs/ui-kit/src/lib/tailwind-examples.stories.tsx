@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { TailwindExamples } from './tailwind-examples';
+import TailwindExamples from './tailwind-examples';
 
 const meta: Meta<typeof TailwindExamples> = {
   component: TailwindExamples,
