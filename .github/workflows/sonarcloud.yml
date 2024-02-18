@@ -14,6 +14,7 @@ jobs:
 
       - run: npm ci
       - run: npx nx run-many --all --target=test --parallel
+      - run: npx nx run ui-kit:coverage-storybook
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master

@@ -17,7 +17,8 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "outputPath": "dist/libs/ui-kit"
+        "outputPath": "dist/libs/ui-kit",
+        "postcssConfig": "libs/ui-kit/postcss.config.js"
       },
       "configurations": {
         "development": {
@@ -73,6 +74,18 @@
         "command": "test-storybook -c libs/ui-kit/.storybook --url=http://localhost:4400 --coverage"
       }
     },
+
+    "coverage-storybook": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "test-storybook -c libs/ui-kit/.storybook --url=http://localhost:4400 --coverage",
+          "nyc report --reporter=lcov -t coverage/storybook --report-dir coverage/storybook"
+        ],
+        "parallel": false
+      }
+    },
+
     "static-storybook": {
       "executor": "@nx/web:file-server",
       "options": {
